@@ -5,7 +5,7 @@ export default function Home(props: { version: number }) {
     <>
       <Head title="Selim's Portfolio" />
 
-      <div className="container">
+      <div className="p-4">
         <div className="title">AdonisJS {props.version} x Inertia x React</div>
 
         <span>

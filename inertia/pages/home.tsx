@@ -1,18 +1,16 @@
 import { Head } from '@inertiajs/react'
+import { Button } from '../../inertia/css/@/components/ui/button'
+import { Header } from '~/components/Header'
+import { Spacing } from '~/components/Spacing'
+import { Hero } from '~/components/icons/Hero'
 
 export default function Home(props: { version: number }) {
   return (
-    <>
-      <Head title="Selim's Portfolio" />
-
-      <div className="container">
-        <div className="title">AdonisJS {props.version} x Inertia x React</div>
-
-        <span>
-          Learn more about AdonisJS and Inertia.js by visiting the{' '}
-          <a href="https://docs.adonisjs.com/guides/inertia">AdonisJS documentation</a>.
-        </span>
-      </div>
-    </>
+    <main>
+      <Head title="Selim's portfolio" />
+      <Header />
+      <Spacing size="md" />
+      <Hero />
+    </main>
   )
 }

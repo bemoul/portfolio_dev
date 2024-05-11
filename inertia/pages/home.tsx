@@ -3,7 +3,7 @@ import { Header } from '~/components/Header'
 import { Skills } from '~/components/Skills'
 import { Spacing } from '~/components/Spacing'
 import { Status } from '~/components/Status'
-import { Hero } from '~/components/icons/Hero'
+import { Hero } from '~/components/Hero'
 
 export default function Home() {
   return (

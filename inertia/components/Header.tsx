@@ -9,9 +9,12 @@ export const Header = (props: PropsWithChildren) => {
   return (
     <header className="sticky top-0 py-4">
       <Section className="flex items-baseline">
-        <h1 className="text-4xl font-bold">Selim Ramdani</h1>
+        <h1 className="text-1xl font-bold text-primary">...</h1>
         <div className="flex-1" />
         <ul className="flex items-center gap-4">
+        <a href="/" className="size-6 p-0 mr-1">
+            Blog
+          </a>
           <a href="https://github.com/bemoul" className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
             <GithubIcon size={25} className="text-foreground" />
           </a>

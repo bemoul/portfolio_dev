@@ -5,7 +5,7 @@ import { Spacing } from '~/components/Spacing'
 import { Status } from '~/components/Status'
 import { Hero } from '~/components/icons/Hero'
 
-export default function Home(props: { version: number }) {
+export default function Home() {
   return (
     <main>
       <Head title="Selim's portfolio" />

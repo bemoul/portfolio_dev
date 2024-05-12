@@ -1,7 +1,6 @@
 import { Section } from "./Section";
 import { Card } from "~/css/@/components/ui/card";
-import { ArrowUpRight, Clapperboard, Code, Home, LucideIcon, Workflow } from "lucide-react";
-import { GithubIcon } from "./icons/GithubIcon";
+import { ArrowUpRight, Clapperboard, Code, LucideIcon, Workflow } from "lucide-react";
 
 export const Status = () => {
   return (
@@ -119,7 +118,7 @@ type WorkProps = {
   url: string;
   freelance?: boolean
 };
-const Work = (props: { image: LucideIcon, title: string, role: string, date: string, url: string }) => {
+const Work = (props: { image: string, title: string, role: string, date: string, url: string }) => {
   return (
     <a href={props.url} className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
       <img src={props.image} alt={props.title} className="w-10 h-10 object-contain rounded-md" />

@@ -1,11 +1,10 @@
-import { PropsWithChildren } from "react"
 import { Section } from "./Section"
 import { GithubIcon } from "./icons/GithubIcon"
 import { LinkedinIcon } from "./icons/LinkedinIcon"
 import { buttonVariants } from "~/css/@/components/ui/button"
 import { cn } from "~/css/@/lib/utils"
 
-export const Header = (props: PropsWithChildren) => {
+export const Header = () => {
   return (
     <header className="sticky top-0 py-4">
       <Section className="flex items-baseline">

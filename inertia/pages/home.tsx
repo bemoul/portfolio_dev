@@ -4,7 +4,6 @@ import { Skills } from '~/components/Skills'
 import { Spacing } from '~/components/Spacing'
 import { Status } from '~/components/Status'
 import { Hero } from '~/components/Hero'
-import { Section } from '~/components/Section'
 import { HowCanIHelp } from '~/components/HowCanIHelp'
 
 export default function Home() {

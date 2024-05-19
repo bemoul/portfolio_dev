@@ -19,14 +19,9 @@ RUN npm install --prod
 FROM base as build
 WORKDIR /app
 COPY --from=deps /app/node_modules /app/node_modules
+COPY ../../.env ./.env
 ADD . .
 RUN node ace build
-
-# Migrations stage
-FROM build as migrations
-WORKDIR /app
-COPY --from=deps /app/node_modules /app/node_modules
-RUN node ace migration:run
 
 # Production stage
 FROM base
@@ -34,8 +29,6 @@ WORKDIR /app
 COPY --from=production-deps /app/node_modules /app/node_modules
 COPY --from=build /app/build /app
 RUN mkdir /app/tmp
-
-COPY --from=migrations /app/database/db.sqlite3 /app/database/db.sqlite3
 
 EXPOSE 8080
 

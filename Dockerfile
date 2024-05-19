@@ -22,6 +22,12 @@ COPY --from=deps /app/node_modules /app/node_modules
 ADD . .
 RUN node ace build
 
+# Migrations stage
+FROM build as migrations
+WORKDIR /app
+COPY --from=deps /app/node_modules /app/node_modules
+RUN node ace migration:run
+
 # Production stage
 FROM base
 WORKDIR /app

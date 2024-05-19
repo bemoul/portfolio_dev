@@ -25,3 +25,4 @@ router.group(() => {
 router.get('blog', [BlogController, 'showBlog']).as('blog.show')
 
 router.get('dashboard', [DashboardController, 'showDashboard']).as('dashboard.show')
+.middleware(middleware.auth())

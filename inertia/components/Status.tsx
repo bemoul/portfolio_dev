@@ -4,7 +4,7 @@ import { ArrowUpRight, Clapperboard, Code, LucideIcon, Workflow } from "lucide-r
 
 export const Status = () => {
   return (
-    <Section className="flex max-lg:flex-col items-start gap-4">
+    <Section className="flex max-lg:flex-col items-start gap-4 font-['Geist-Regular']">
       <div className="flex-[3] w-full">
         <Card className="w-full p-4 flex flex-col gap-2">
           <p className="text-lg text-muted-foreground">Projets</p>

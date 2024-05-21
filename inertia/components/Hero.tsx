@@ -3,7 +3,7 @@ import { Section } from "./Section"
 
 export const Hero = () => {
   return (
-    <Section className="flex max-lg:flex-col items-start gap-4">
+    <Section className="flex max-lg:flex-col items-start gap-4 font-['Geist-Regular']">
       <div className="flex-[3] w-full flex flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary">Selim Ramdani</h2>
         <h3 className="text-3xl items-start gap-4">Développeur Web</h3>

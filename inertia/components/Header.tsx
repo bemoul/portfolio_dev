@@ -7,7 +7,7 @@ import { cn } from "~/css/@/lib/utils"
 export const Header = () => {
 
   return (
-    <header className="sticky top-0 py-4">
+    <header className="sticky top-0 py-4 font-['Geist-Regular']">
       <Section className="flex items-baseline">
         <div className="flex-1" />
         <ul className="flex items-center gap-4">

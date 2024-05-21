@@ -2,7 +2,7 @@ import { Section } from "./Section"
 
 export const HowCanIHelp = () => {
   return (
-    <Section className='m-auto py-10 lg:py-14 px-4 w-full'>
+    <Section className='m-auto py-10 lg:py-14 px-4 w-full font-["Geist-Regular"]'>
     <h2 className="text-3xl font-semibold tracking-tight mb-1">
       Comment puis-je vous assister ?
     </h2>

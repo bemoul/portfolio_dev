@@ -10,7 +10,7 @@ import { PostgresIcon } from "./icons/PostgresIcon";
 export const Skills = () => {
   return (
     <>
-      <Section className="flex flex-col items-start gap-4">
+      <Section className="flex flex-col items-start gap-4 font-['Geist-Regular']">
         <div className="flex max-md:flex-col gap-4">
 
           <div className="flex flex-col gap-2 flex-1  rounded-xl bg-card/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border-border border">

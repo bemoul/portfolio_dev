@@ -3,7 +3,7 @@ import { HttpContext } from "@adonisjs/core/http";
 
 @inject()
 export default class DashboardController {
-  async showDashboard({inertia }: HttpContext){
-    return inertia.render('dashboard')
+  async showDashboard({ inertia }: HttpContext) {
+    return inertia.render('admin/dashboard/dashboard_display/index')
   }
 }

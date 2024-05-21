@@ -18,7 +18,7 @@ export const Skills = () => {
               <ReactIcon size={60} className="animate-spin" style={{ animationDuration: "10s" }} />
             </div>
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">ReactJS</h3>
-            <p className="text-sm text-muted-foreground">Je m'appuie sur ReactJS pour construire rapidement des applications web interactives.</p>
+            <p className="text-sm text-muted-foreground">Je m'appuie sur ReactJS pour construire des applications web rapide et hautement interactives.</p>
           </div>
 
           <div className="flex flex-col justify-center gap-2 flex-1 rounded-xl bg-card/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border-border border">
@@ -26,7 +26,7 @@ export const Skills = () => {
               <AdonisIcon size={60} />
             </div>
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">AdonisJS</h3>
-            <p className="text-sm text-muted-foreground">Je fusionne la puissance d'AdonisJS avec React pour créer des applications web complexes et robustes.</p>
+            <p className="text-sm text-muted-foreground">En combinant la puissance d'AdonisJS avec React, je crée des applications web robustes et complexes adaptées à vos besoins.</p>
           </div>
 
           <div className="flex flex-col gap-2 flex-1 rounded-xl bg-card/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border-border border">
@@ -34,7 +34,7 @@ export const Skills = () => {
               <RemotionIcon size={60} className="flex flex-center" />
             </div>
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">Remotion</h3>
-            <p className="text-sm text-muted-foreground">Je transforme vos idées en vidéos et vous donne de la visibilité sur le web et vos réseaux sociaux.</p>
+            <p className="text-sm text-muted-foreground">Je transforme vos idées en vidéos et vous aide à gagner en visibilité sur le web et vos réseaux sociaux.</p>
 
           </div>
         </div>
@@ -51,11 +51,11 @@ export const Skills = () => {
           <div className="flex flex-col gap-2 flex-3 rounded-xl bg-card/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border-border border">
             <ZapierIcon size={80} className="mr-10" />
             <p className="text-sm text-muted-foreground mb-2">
-              Je libère votre entreprise des tâches répétitives et booste votre productivité.
+              Je libère votre entreprise de leurs tâches répétitives et booste votre productivité.
             </p>
             <OpenAiLogo size={80} className="mr-10" />
             <p className="text-sm text-muted-foreground">
-              J'ai manipulé des modèles IA pour améliorer des photos immobilières 
+            En utilisant les modèles IA, j'améliore les photos et j'utilise l'IA pour fournir des solutions avancées pour vos projets.
             </p>
           </div>
         </div>

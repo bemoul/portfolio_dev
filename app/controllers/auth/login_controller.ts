@@ -4,8 +4,8 @@ import type { HttpContext } from '@adonisjs/core/http'
 
 @inject()
 export default class LoginController {
-  async showAdmin({inertia }: HttpContext){
-    return inertia.render('auth/admin')
+  async showAdminAccess({ inertia }: HttpContext) {
+    return inertia.render('admin/auth/admin_access')
   }
 
   async handleForm({ auth, request, response }: HttpContext) {
@@ -13,7 +13,7 @@ export default class LoginController {
     /**
      * Step 1: Get credentials from the request body
      */
-    const {email, password} = request.only(['email', 'password'])
+    const { email, password } = request.only(['email', 'password'])
 
     /**
      * Step 2: Verify credentials

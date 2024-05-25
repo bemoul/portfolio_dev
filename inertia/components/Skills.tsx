@@ -12,13 +12,12 @@ export const Skills = () => {
     <>
       <Section className="flex flex-col items-start gap-4 font-['Geist-Regular']">
         <div className="flex max-md:flex-col gap-4">
-
           <div className="flex flex-col gap-2 flex-1  rounded-xl bg-card/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border-border border">
             <div className="w-full flex items-center justify-center">
               <ReactIcon size={60} className="animate-spin" style={{ animationDuration: "10s" }} />
             </div>
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">ReactJS</h3>
-            <p className="text-sm text-muted-foreground">Je m'appuie sur ReactJS pour construire des applications web rapide et hautement interactives.</p>
+            <p className="text-sm text-muted-foreground">Je me sers de ReactJS pour élaborer des applications web rapides et très interactives.</p>
           </div>
 
           <div className="flex flex-col justify-center gap-2 flex-1 rounded-xl bg-card/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border-border border">
@@ -26,7 +25,7 @@ export const Skills = () => {
               <AdonisIcon size={60} />
             </div>
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">AdonisJS</h3>
-            <p className="text-sm text-muted-foreground">En combinant la puissance d'AdonisJS avec React, je crée des applications web robustes et complexes adaptées à vos besoins.</p>
+            <p className="text-sm text-muted-foreground">En utilisant la puissance d'AdonisJS et React, je conçois des applications web robustes et complexes qui répondent à vos besoins.</p>
           </div>
 
           <div className="flex flex-col gap-2 flex-1 rounded-xl bg-card/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 border-border border">

@@ -25,4 +25,25 @@ export default class ArticlesController {
       article: presenter.toJson(article)
     });
   }
+
+  @inject()
+  async create({ inertia }: HttpContext) {
+    return inertia.render('admin/dashboard/articles/create');
+  }
+
+  @inject()
+  async store({ request, response, auth }: HttpContext) {
+    const data = request.only(['title', 'content', 'url'])
+
+    const article = new Article()
+    article.title = data.title
+    article.content = data.content
+    article.url = data.url
+    // article.userId = auth.user?.id
+
+    await article.save()
+
+    return response.redirect(`/admin/dashboard/articles/${article.id}`)
+  }
+
 }

@@ -50,6 +50,7 @@ router.group(() => {
   router.get('dashboard', [DashboardController, 'showDashboard']);
 
   router.get('/dashboard/articles', [ArticlesController, 'index']);
+  router.get('/dashboard/articles/create', [ArticlesController, 'create']);
   router.get('/dashboard/articles/:id', [ArticlesController, 'show']);
 
   router.get('/dashboard/projects', [ProjectsController, 'index']);

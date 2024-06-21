@@ -32,7 +32,7 @@ export default class ArticlesController {
   }
 
   @inject()
-  async store({ request, response, auth }: HttpContext) {
+  async store({ request, response }: HttpContext) {
     const data = request.only(['title', 'content', 'url'])
 
     const article = new Article()

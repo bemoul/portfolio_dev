@@ -28,6 +28,7 @@ WORKDIR /app
 COPY --from=production-deps /app/node_modules /app/node_modules
 COPY --from=build /app/build /app
 RUN mkdir /app/tmp
+
 EXPOSE 8080
 
 ARG  APP_RELEASE

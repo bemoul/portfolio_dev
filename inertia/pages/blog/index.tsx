@@ -5,6 +5,12 @@ import { Header } from "~/components/Header"
 import { Card, CardContent, CardFooter, CardHeader } from "~/css/@/components/ui/card";
 
 export default function BlogIndex(props: InferPageProps<BlogController, 'index'>) {
+  <Head>
+    <title>Selim Ramdani : Blog</title>
+    <meta head-key="description" name="description" content="Développeur Web spécialisé dans la création d'applications Web. Passionné et disponible pour travailler sur vos projets. " />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="https://i.ibb.co/X2GtTjk/sm.png" />
+  </Head>
   const { articles } = props;
 
   return (

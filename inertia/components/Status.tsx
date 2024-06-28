@@ -115,7 +115,7 @@ const WORKS: WorkProps[] = [
     title: "Mediapole",
     role: "Développeur Web",
     date: "2023 - maintenant",
-    url: "/"
+    url: "https://immo-vitrine.com/"
   },
 ];
 

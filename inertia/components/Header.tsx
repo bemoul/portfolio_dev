@@ -18,12 +18,12 @@ export const Header = () => {
           </li>
           <li>
 
-            <a href="https://github.com/bemoul" className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}>
+            <a href="https://github.com/bemoul" target="blank" className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}>
               <GithubIcon size={25} className="text-foreground" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/selim-ramdani/" className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}>
+            <a href="https://www.linkedin.com/in/selim-ramdani/" target="blank" className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}>
               <LinkedinIcon size={25} className="text-foreground" />
             </a>
           </li>

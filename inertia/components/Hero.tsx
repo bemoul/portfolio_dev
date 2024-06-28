@@ -10,7 +10,7 @@ export const Hero = () => {
       </div>
       <div className="flex-[1.5] max-md:m-auto ml-auto">
         <img
-          src="https://i.ibb.co/WfgzyT6/hero.jpg"
+          src="https://i.ibb.co/sbjm27m/Capture-d-cran-2024-06-11-224619.png"
           className="w-full h-auto max-w-xs border border-accent rounded-full shadow-lg max-md:w-40 object-cover"
           alt="selim's picture"
         />

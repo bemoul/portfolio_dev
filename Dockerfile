@@ -1,4 +1,4 @@
-FROM node:20-alpine3.18 as base
+FROM --platform=linux/arm64 node:20-alpine as base
 
 RUN apk --no-cache add curl
 RUN corepack enable
@@ -34,6 +34,7 @@ EXPOSE 8080
 ARG  APP_RELEASE
 
 ENV APP_RELEASE=${APP_RELEASE}
+ENV APP_URL=https://selim-ramdani.com
 ENV HOST=0.0.0.0
 ENV PORT=8080
 ENV NODE_ENV=production

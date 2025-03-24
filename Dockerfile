@@ -1,25 +1,26 @@
-FROM --platform=linux/arm64 node:20-alpine as base
+# Use the appropriate platform for your host system
+FROM node:20-alpine AS base
 
 RUN apk --no-cache add curl
 RUN corepack enable
 
 # All deps stage
-FROM base as deps
+FROM base AS deps
 WORKDIR /app
-ADD package.json package-lock.json ./
+COPY package.json package-lock.json ./
 RUN npm install
 
 # Production only deps stage
-FROM base as production-deps
+FROM base AS production-deps
 WORKDIR /app
-ADD package.json package-lock.json ./
+COPY package.json package-lock.json ./
 RUN npm install --prod
 
 # Build stage
-FROM base as build
+FROM base AS build
 WORKDIR /app
 COPY --from=deps /app/node_modules /app/node_modules
-ADD . .
+COPY . .
 RUN node ace build
 
 # Production stage
@@ -31,13 +32,15 @@ RUN mkdir /app/tmp
 
 EXPOSE 8080
 
-ARG  APP_RELEASE
+# Use ARG for build-time variables and ENV for runtime variables
+ARG APP_RELEASE
 
 ENV APP_RELEASE=${APP_RELEASE}
 ENV APP_URL=https://selim-ramdani.com
 ENV HOST=0.0.0.0
 ENV PORT=8080
 ENV NODE_ENV=production
+# Consider using a secrets management solution for sensitive data
 ENV APP_KEY=0qR4-3B0dGHBI9gvwEY9QstMjJk6uw74
 ENV DRIVE_DISK=local
 ENV SESSION_DRIVER=cookie
